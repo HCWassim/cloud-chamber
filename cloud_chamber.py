@@ -112,11 +112,11 @@ while len(Lst) < NB_TRACE:
             norme_p = projection(E_EPAISSEUR, cos_theta)
             # Lst.append(round(norme_p, 2))
         # Vérification si une projection est supérieur à la longueur de la norme:
-        # if norme_p > LONGUEUR_TRACE:
-        #     print("_____PROJECTION INVALIDE_____")
-        #     print(colored(255,0,0, norme_p))
-        # else:
-        #     Lst.append(round(norme_p, 2))
+        if norme_p > LONGUEUR_TRACE:
+            print("_____PROJECTION INVALIDE_____")
+            print(colored(255,0,0, norme_p))
+        else:
+            Lst.append(round(norme_p, 2))
 
 # Final Plot
 dic = frequency_val(Lst)
