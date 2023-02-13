@@ -5,7 +5,7 @@ import numpy as np
 import math
 
 # Obtenir le nombre d'image:
-path = 'C:\\Users\\Wassim\\Documents\\Les Projets\\Projet Informatique\\stage L3\\Acquisition\\Acquisition_06Janv2023\\Image'
+path = 'IMAGE\PATH\TO\GET\THE\ACQUISITION'
 num_img = len([f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))])
 
 # Constante:
@@ -79,7 +79,7 @@ cv2.imshow("test", thresh)
 cv2.imshow("closing", closing)
 # sauvegarde:
 # cv2.imwrite('image_compte rendu/nettoyage.jpg', thresh)
-cv2.imwrite('image_compte rendu/cluster.jpg', closing)
+cv2.imwrite('WHERE/YOU/WANT/TO/SAVE/cluster.jpg', closing)
 # cv2.imshow("inverted", inverted)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
